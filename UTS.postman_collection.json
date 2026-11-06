@@ -1,0 +1,111 @@
+{
+  "info": {
+    "_postman_id": "a8d94891-065b-43b2-af83-3fc879e0394f",
+    "name": "UTS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58786730",
+    "_collection_link": "https://go.postman.co/collection/58786730-a8d94891-065b-43b2-af83-3fc879e0394f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer TOKEN JWT",
+            "disabled": true
+          },
+          {
+            "key": "sortby",
+            "value": "asc",
+            "disabled": true
+          },
+          {
+            "key": "sortby",
+            "value": "desc",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"item_name\": \"PowerBank\",\r\n    \"borrower_name\": \"Tommy\",\r\n    \"borrowed_date\": \"2026-09-17\",\r\n    \"is_returned\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/peminjaman",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "peminjaman"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Sort  n sortby",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/peminjaman/6aedb3d1c1194e7c54c50ee3",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "peminjaman",
+            "6aedb3d1c1194e7c54c50ee3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "put",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "{{BASE_URL}}/peminjaman/6aedb3fac1194e7c54c50ee4",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "peminjaman",
+            "6aedb3fac1194e7c54c50ee4"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
